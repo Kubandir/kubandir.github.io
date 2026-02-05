@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CyberCorp</title>
+        <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/68f3df8a793bb6d00c5da848">
+        <style>
+            :root {
+                font-family: 'Inter', sans-serif;
+                background-color: #0d1117;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header-wrapper {
+                background-color: #161b22;
+                width: 100%;
+            }
+
+            .header-content {
+                padding: 0 20px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+                font-size: 1.5rem;
+                gap: 4px;
+            }
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                flex-shrink: 0;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .logo-text {
+                font-size: 2em;
+                font-weight: bold;
+                color: #5aacff;
+                white-space: nowrap;
+            }
+
+            nav.main-nav {
+                margin-left: auto;
+            }
+
+            nav.main-nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            nav.main-nav li {
+                color: #8b949e;
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+
+            nav.secondary-nav {
+                width: 100%;
+            }
+
+            nav.secondary-nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                height: 60px;
+            }
+
+            nav.secondary-nav li {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 1rem;
+            }
+
+            nav.secondary-nav li:nth-child(1) {
+                background-color: #22262d;
+            }
+
+            nav.secondary-nav li:nth-child(2) {
+                background-color: #2c3139;
+            }
+
+            nav.secondary-nav li:nth-child(3) {
+                background-color: #343b44;
+            }
+
+            nav.secondary-nav li:nth-child(4) {
+                background-color: #394149;
+            }
+
+            .join-button {
+                background-color: #118a0d;
+                color: #ffffff;
+                border: none;
+                margin-left: 10px;
+                padding: 6px 12px;
+                font-size: 1rem;
+                flex-shrink: 0;
+                cursor: pointer;
+            }
+
+            .hero-image {
+                width: 100%;
+                display: block;
+            }
+
+            .hero-image-footer {
+                width: 100%;
+                margin-top: 3px;
+                font-size: 0.8em;
+                color: #767980;
+                background-color: #14181f;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 20px;
+                box-shadow: 0 -3px 0 0 #0d1014, 0 3px 0 0 #0d1014;
+                padding-right: 5px;
+            }
+
+            .digital-night {
+                background-color: #14181f;
+                padding: 60px 40px;
+                margin-top: 3px;
+                text-align: center;
+            }
+
+            .digital-night h1 {
+                color: #5aacff;
+                font-size: 3rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                margin-bottom: 10px;
+            }
+
+            .digital-night hr {
+                width: 200px;
+                height: 3px;
+                background-color: #30363d;
+                border: none;
+                margin: 0 auto 40px;
+            }
+
+            .digital-night p {
+                color: #808b92;
+                font-size: 1.2em;
+                line-height: 1.8;
+                margin-bottom: 20px;
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .pillars-wrapper {
+                background-color: #161b22;
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                gap: 10px;
+                padding: 25px 10px;
+            }
+
+            .pillars {
+                border: 3px solid #57a5fd;
+                padding: 20px;
+                color: #57a5fd;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .pillars i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                margin: 10px auto;
+                border: 3px solid #57a5fd;
+                border-radius: 50%;
+                font-size: 2.5em;
+            }
+
+            .pillars h3 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .pillars p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: bold;
+                font-size: 0.8em;
+            }
+
+            .pillars-wrapper .pillars:nth-child(even) {
+                border-color: #2d9e42;
+                color: #2d9e42;
+            }
+
+            .pillars-wrapper .pillars:nth-child(even) i {
+                border-color: #2d9e42;
+                color: #2d9e42;
+            }
+
+            .quote {
+                background: #14181f;
+                padding: 50px 40px;
+                text-align: center;
+            }
+
+            .quote-wrapper {
+                display: inline-block;
+                text-align: left;
+            }
+
+            .quote-text {
+                color: #58a6ff;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 0;
+                position: relative;
+                display: block;
+            }
+
+            .quote-text::before {
+                content: "\201E";
+                color: #58a6ff;
+                font-size: 2.5rem;
+                margin-right: 8px;
+            }
+
+            .quote-text::after {
+                content: "\201C";
+                color: #58a6ff;
+                font-size: 2.5rem;
+                margin-left: 8px;
+            }
+
+            .quote-signature {
+                color: #858272;
+                font-size: 1rem;
+                margin-top: 8px;
+                display: block;
+                margin-right: 25px;
+                text-align: right;
+            }
+
+            footer.main-footer {
+                background-color: #0d1117;
+                box-shadow: 0px -20px 20px #0a0e12aa;
+                padding: 60px 40px 40px;
+                display: flex;
+                gap: 60px;
+                color: #8b949e;
+            }
+
+            .footer-column {
+                flex: 1;
+            }
+
+            .footer-column h3 {
+                color: #ffffff;
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .footer-column p {
+                margin: 10px 0;
+                line-height: 1.6;
+            }
+
+            .footer-column a {
+                color: #8b949e;
+                text-decoration: none;
+            }
+
+            .footer-column a:hover {
+                color: #58a6ff;
+            }
+
+            .footer-links {
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            @media (max-width: 768px) {
+                .header-content {
+                    flex-wrap: wrap;
+                    height: auto;
+                    padding: 10px;
+                }
+
+                .logo-text {
+                    font-size: 1.5em;
+                }
+
+                nav.main-nav {
+                    order: 3;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+
+                nav.main-nav ul {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+                nav.main-nav li {
+                    font-size: 0.7rem;
+                }
+
+                .join-button {
+                    margin-left: auto;
+                }
+
+                nav.secondary-nav ul {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                nav.secondary-nav li {
+                    padding: 15px;
+                }
+
+                .digital-night {
+                    padding: 40px 20px;
+                }
+
+                .digital-night h1 {
+                    font-size: 2rem;
+                }
+
+                .digital-night p {
+                    font-size: 1rem;
+                }
+
+                .pillars-wrapper {
+                    flex-direction: column;
+                    padding: 20px;
+                }
+
+                .pillars {
+                    max-width: 100%;
+                }
+
+                .quote {
+                    padding: 30px 20px;
+                }
+
+                .quote-text {
+                    font-size: 1.2rem;
+                }
+
+                footer.main-footer {
+                    flex-direction: column;
+                    padding: 40px 20px;
+                    gap: 30px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img class="logo-img" src="https://api.ssps.cajthaml.eu/file/69335fbb6945137e5671b038" alt="Logo">
+                    <span class="logo-text">CyberCorp</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li>Zprávy z podsvětí</li>
+                        <li>Kybernetika</li>
+                        <li>Hackerská elita</li>
+                        <li>Často hackované otázky</li>
+                    </ul>
+                </nav>
+                <button class="join-button">PŘIPOJIT SE</button>
+            </div>
+        </header>
+        <nav class="secondary-nav">
+            <ul>
+                <li>PŘEŽITÍ</li>
+                <li>KYBERZBRANĚ</li>
+                <li>SÍŤOVÉ VÁLKY</li>
+                <li>DIGITÁLNÍ UTOPIE</li>
+            </ul>
+        </nav>
+
+        <main>
+            <img class="hero-image" src="https://api.ssps.cajthaml.eu/file/69335fb128ac5f259ab1763a" alt="Background">
+            <div class="hero-image-footer">
+                <p>2126 &copy; CyberCorp &ndash; Všechna práva zašifrována</p>
+            </div>
+
+            <section class="digital-night">
+                <h1>DIGITÁLNÍ NOC</h1>
+                <hr>
+                <p>V roce 2126 se svět rozdělil na osvícené megaměsta a temné digitální pustiny. Lidé hledají bezpečí
+                    pod vrstvou holografických mrakodrapů, zatímco kybernetičtí rebelové bojují za svobodu na
+                    podvratných sítích.</p>
+                <p>Každodenní život je propojen s neurálními implantáty, ale pod jejich lesklóu fasádou se skrývá boj o
+                    kontrolu nad myšlenkami. Hackeři na každém rohu upravují realitu, manipulují s daty a mění svět v
+                    nepřetržitý digitální chaos.</p>
+                <p>Kyberkultura je život. Kybernetická válka je nevyhnutelná. Ale jediné, co zůstává jisté, je nekončící
+                    touha po svobodě.</p>
+            </section>
+            <section class="pillars-wrapper">
+                <article class="pillars">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>AI ROZVOJ</h3>
+                    <p>Kyberumělci posouvají hranice kreativity ve spojení s umělou inteligencí.</p>
+                </article>
+                <article class="pillars">
+                    <i class="fa-solid fa-key"></i>
+                    <h3>BEZPEČNOST</h3>
+                    <p>Data jsou měnou. Vaše soukromí? Iluze v rukou megakorporací.</p>
+                </article>
+                <article class="pillars">
+                    <i class="fa-solid fa-glasses"></i>
+                    <h3>BUDOUCNOST</h3>
+                    <p>Nová éra začíná ve virtuálním světě – realita ztrácí význam.</p>
+                </article>
+                <article class="pillars">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>KYBERSÍTĚ</h3>
+                    <p>Připojte se. Buďte součástí boje za svobodu na darknetu.</p>
+                </article>
+            </section>
+            <section class="quote">
+                <div class="quote-wrapper">
+                    <p class="quote-text">Všechno je data. Nezáleží na tom, co je skutečné.</p>
+                    <span class="quote-signature">&ndash; CyberProphet</span>
+                </div>
+            </section>
+            <footer class="main-footer">
+                <div class="footer-column">
+                    <h3>O nás</h3>
+                    <p>CyberCorp je největší síťová komunita, která propojuje mysl a budoucnost.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontakt</h3>
+                    <p><a href="mailto:info@cybercorp.net">info@cybercorp.net</a></p>
+                    <p><a href="tel:+420284016666">+420 284 016 666</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Informace</h3>
+                    <p class="footer-links">PODPORA</p>
+                    <p class="footer-links">TECHNOLOGIE</p>
+                    <p class="footer-links">HACKERSKÁ AKADEMIE</p>
+                    <p>2126 &copy; CyberCorp</p>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+</html>
+<!-- Zdroje: https://www.w3schools.com/html/html5_semantic_elements.asp -->
